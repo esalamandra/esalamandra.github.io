@@ -1,0 +1,168 @@
+@import "compass/reset";
+
+body{
+    background-color: black;
+    background-image: url("/images/black-3d-tiles-vo4_2.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+}
+
+.main_div{
+    background-color: #333333;
+    opacity: 0.6;
+    margin: 2% 15%;
+    padding: 0 5% 5% 1%;
+    height: 80%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 3px rgba(255,255,255,0.5);
+    color: white;
+    
+    
+    .content_div{
+	margin: 2em -3em 0 0;
+	height: 80%;
+	width: 60%;
+	min-height: 80%;
+	float: right;
+	height: 100px;   
+	overflow-y : scroll;
+    }
+    
+}
+
+.select_box{
+    clear: both;
+    background-color: green;
+}
+
+h1,
+a {
+    span{
+	color: #b48608; 
+    }
+    color: red;
+    font-family: 'Droid serif', serif; font-size: 36px; 
+    font-weight: 400; 
+    font-style: italic; 
+    line-height: 44px; margin: 0 0 12px; 
+    text-align: center; 
+    text-decoration: none; border-bottom: 1px solid #4c3a07;
+}
+
+p { color: #eee; font-family: 'Droid Sans', sans-serif; font-size: 15px; 
+font-weight: 400; line-height: 24px; margin: 0 0 14px; }
+
+//a { color: #b48608;  }
+
+a:hover {
+    color: #fff; 
+    background: #b48608;
+}
+
+.date {
+    span { 
+	color: #000; 
+	text-decoration: none; 
+	font-style: italic; 
+	font-size: 13px; 
+	text-align: center; 
+	padding: 2px 5px; 
+	background: #fff; 
+	width: 120px; 
+	margin: 0 auto; 
+	display: block; 
+	position: relative; 
+	top: -10px; 
+	font-family: "Droid serif", serif;
+    }
+    border-top: 1px solid #fff; 
+    position: relative; 
+    top: 20px;
+    margin-bottom: 30px; 
+    
+}
+
+a.btn {
+    .btn:hover 
+    { 
+	color: #000; 
+	background: #fff; 
+	
+    }
+    font-family: 'Droid serif', serif; 
+    background: #b48608; padding: 4px 7px; 
+    color: #000; 
+    text-decoration: none; 
+    margin: 0 auto; 
+    width: 100%; 
+    width: 120px; 
+    margin: 0 auto; 
+    display: block; 
+    text-align: center; 
+    font-style: italic; 
+    
+}
+
+
+
+
+nav  {
+    display: block;
+    width: 105%;
+    overflow: hidden;
+
+    ul {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    padding: .2em;
+    float: right;
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .5em;    
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset;
+	li {
+	    &:first-child a {
+		border-left: 0;
+		border-radius: 4px 0 0 4px;            
+	    }
+	    &:last-child a {
+		border-right: 0;
+		border-radius: 0 4px 4px 0;            
+	    }
+	    
+	    float:left;
+	    max-width: 10em;
+	}
+    }
+
+    a {
+	height: 1.5em;
+	float:left;
+	padding: .5em 0.5em;
+	text-decoration: none;
+	color: #555;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	font: bold 1.1em/1 'trebuchet MS', Arial, Helvetica;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #fff #ccc #999 #eee;
+	background: #c1c1c1;
+	background: linear-gradient(#f5f5f5, #c1c1c1);            
+ 
+	&:hover, 
+	&:focus {
+	outline: 0;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,.2);
+	background: #fac754;
+	background: linear-gradient(#fac754, #f8ac00);
+	}
+
+	&:active {
+	    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+	}
+    }
+}

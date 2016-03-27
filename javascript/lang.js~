@@ -1,0 +1,35 @@
+// define items in a String array:
+//String[] languages = new String[] {"English", "French", "Spanish", "Japanese", "Chinese"};
+ 
+// create a combo box with the fixed array:
+//JComboBox<String> comboLanguage = new JComboBox<String>(languages);
+
+
+function choselang() {
+	var language = window.navigator.userLanguage || window.navigator.language;
+	
+//	document.getElementById("lang").selectedIndex = 1;
+	//window.location = "http://www.yoururl.com";
+	
+	window.location = "https://google.pl";
+	return language;
+}
+
+function default_lang() {
+	var language = window.navigator.userLanguage || window.navigator.language;	
+	if (language == "pl") {
+		document.getElementById("lang").selectedIndex = 1 ;
+		document.getElementById("button_go").innerHTML = "Wejdź na stronę";
+	}else {
+		document.getElementById("lang").selectedIndex = 2 ;
+		document.getElementById("button_go").innerHTML = "Enter the site";
+	}
+//	alert('ok');1111
+//	window.location = "http://www.yoururl.com";
+}
+
+function lang_go() {
+		
+		window.location = "pl";
+		
+}
